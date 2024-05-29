@@ -108,11 +108,11 @@ for index, volume_url in enumerate(volume_urls):
 
 - 有合作诗则忽略"--"与空格间的文字，以空格分割每行后忽略以“--”开头的字符串。
 
-  <img src="C:/Users/86199/AppData/Roaming/Typora/typora-user-images/image-20240528195857509.png" alt="image-20240528195857509" style="zoom:50%;" />
+  <img src="https://qinglan-1324038201.cos.ap-nanjing.myqcloud.com/images/202405291121305.png" alt="image-20240528195857509" style="zoom:50%;" />
 
 - 忽略行尾标点号后的文字，使用`rfind`函数找到最后一个标点并截取其前所有内容。
 
-  <img src="C:/Users/86199/AppData/Roaming/Typora/typora-user-images/image-20240528195538917.png" alt="image-20240528195538917" style="zoom: 50%;" />
+  <img src="https://qinglan-1324038201.cos.ap-nanjing.myqcloud.com/images/202405291121307.png" alt="image-20240528195538917" style="zoom: 50%;" />
 
 ```python
 # 提取所有诗内容到一个文件
@@ -146,7 +146,7 @@ def write_poem():
 
 考虑两种分词方法，一种以单字分词，一种使用jieba分词。
 
-停用词参考网上常见虚词、叹词等，设置如下：<img src="C:/Users/86199/AppData/Roaming/Typora/typora-user-images/image-20240528200453289.png" alt="image-20240528200453289" style="zoom:50%;" />
+停用词参考网上常见虚词、叹词等，设置如下：<img src="https://qinglan-1324038201.cos.ap-nanjing.myqcloud.com/images/202405291121308.png" alt="image-20240528200453289" style="zoom:50%;" />
 
 #### 可视化图表
 
@@ -154,7 +154,7 @@ def write_poem():
 
 - 饼图展示四季分布，可见春秋两季占据提及季节的全唐诗92%，”伤春悲秋“的说法有一定数据支持。
 
-<img src="D:/%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%BB%BC%E5%90%88%E5%AE%9E%E8%B7%B5/result/season_pie.png" alt="season_pie" style="zoom:67%;" />
+<img src="https://qinglan-1324038201.cos.ap-nanjing.myqcloud.com/images/202405291124161.png" alt="season_pie" style="zoom:67%;" />
 
 ```
 # 绘制季节分布饼图
@@ -179,7 +179,7 @@ def draw_split_season():
 
 - 由柱状图展示单字频率最高的十项，分布如下。展现以人为本、借景抒情、踌躇满志等诗情表达方向。
 
-  <img src="D:/%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%BB%BC%E5%90%88%E5%AE%9E%E8%B7%B5/result/single_char_frequency.png" alt="single_char_frequency" style="zoom:67%;" />
+  <img src="https://qinglan-1324038201.cos.ap-nanjing.myqcloud.com/images/202405291124162.png" alt="single_char_frequency" style="zoom:67%;" />
   
   ```
   # 单字分词后，绘制单字前 num 个频率最高的词组柱状图
@@ -202,13 +202,13 @@ def draw_split_season():
 
 **结巴分词**，提取分词文件“filter_poem.txt”，分别对不同长度词组分别展示词云和柱状图。分词后词组最大长度为7。以长度为2和4的词组为例：
 
-<img src="D:/%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%BB%BC%E5%90%88%E5%AE%9E%E8%B7%B5/result/wordcloud_char2_poem.png" alt="wordcloud_char2_poem" style="zoom: 33%;" />
+<img src="https://qinglan-1324038201.cos.ap-nanjing.myqcloud.com/images/202405291124163.png" alt="wordcloud_char2_poem" style="zoom: 33%;" />
 
-<img src="D:/%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%BB%BC%E5%90%88%E5%AE%9E%E8%B7%B5/result/lenth2_num15_frequency.png" alt="lenth2_num15_frequency" style="zoom: 50%;" />
+<img src="https://qinglan-1324038201.cos.ap-nanjing.myqcloud.com/images/202405291124164.png" alt="lenth2_num15_frequency" style="zoom: 50%;" />
 
-<img src="D:/%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%BB%BC%E5%90%88%E5%AE%9E%E8%B7%B5/result/wordcloud_char4_poem.png" alt="lenth4_num15_frequency" style="zoom:33%;" />
+<img src="https://qinglan-1324038201.cos.ap-nanjing.myqcloud.com/images/202405291124165.png" alt="lenth4_num15_frequency" style="zoom:33%;" />
 
-<img src="D:/%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%BB%BC%E5%90%88%E5%AE%9E%E8%B7%B5/result/lenth4_num15_frequency.png" alt="lenth4_num15_frequency" style="zoom:50%;" />
+<img src="https://qinglan-1324038201.cos.ap-nanjing.myqcloud.com/images/202405291124166.png" alt="lenth4_num15_frequency" style="zoom:50%;" />
 
 ```python
 # jieba分词后，绘制任意长度为 lenth 词组的词云，lenth = 0时，绘制所有词组
@@ -292,11 +292,11 @@ def write_poet():
 
 依据作者对诗人创作数目进行统计，有作者记录的作品22625首，共计作者1037人。选择创作数最多前20人绘制拼图，在有作者的诗中，发现创作数最多的前20人创造了近一半：
 
-<img src="D:/%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%BB%BC%E5%90%88%E5%AE%9E%E8%B7%B5/result/poet_frequency.png" alt="poet_frequency" style="zoom: 50%;" />
+<img src="https://qinglan-1324038201.cos.ap-nanjing.myqcloud.com/images/202405291124167.png" alt="poet_num20_pie" style="zoom:50%;" />
 
 生成词云：
 
-<img src="D:/%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%BB%BC%E5%90%88%E5%AE%9E%E8%B7%B5/result/wordcloud_poet.png" alt="wordcloud_poet" style="zoom: 50%;" /><img src="D:/%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%BB%BC%E5%90%88%E5%AE%9E%E8%B7%B5/bg.jpg" alt="bg" style="zoom: 50%;" />
+<img src="https://qinglan-1324038201.cos.ap-nanjing.myqcloud.com/images/202405291124168.png" alt="wordcloud_poet" style="zoom: 50%;" /><img src="https://qinglan-1324038201.cos.ap-nanjing.myqcloud.com/images/202405291124169.jpg" alt="bg" style="zoom: 50%;" />
 
 ```python
 # 绘制写诗数量词云
