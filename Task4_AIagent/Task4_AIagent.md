@@ -2,7 +2,7 @@
 
   在百度的AI原生应用开发平台https://appbuilder.cloud.baidu.com/上创建一个应用，将个人密钥和应用ID填入，运行程序。可实现应用的语音交互。
 
-<img src="C:/Users/86199/AppData/Roaming/Typora/typora-user-images/image-20240601024021965.png" alt="image-20240601024021965" style="zoom: 67%;" />     <img src="C:/Users/86199/AppData/Roaming/Typora/typora-user-images/image-20240601023121689.png" alt="image-20240601023121689" style="zoom: 67%;" />      
+<img src="https://qinglan-1324038201.cos.ap-nanjing.myqcloud.com/images/202406010253807.png" alt="image-20240601024021965" style="zoom: 67%;" />     <img src="https://qinglan-1324038201.cos.ap-nanjing.myqcloud.com/images/202406010253808.png" alt="image-20240601023121689" style="zoom: 67%;" />      
 
 智能对话机器人的核心工作流程可以分为以下几个步骤：
 
@@ -22,4 +22,4 @@
 
 智能体Agent生成响应后，会将结果传递给TTS模块。TTS模块负责将文本转换为自然流畅的语音，并反馈给用户。这样，用户就可以听到机器人的回答了。
 
-![image-20240601023827814](C:/Users/86199/AppData/Roaming/Typora/typora-user-images/image-20240601023827814.png)
+![image-20240601023827814](https://qinglan-1324038201.cos.ap-nanjing.myqcloud.com/images/202406010253809.png)
