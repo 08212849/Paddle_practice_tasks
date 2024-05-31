@@ -181,7 +181,7 @@ def draw_split_season():
 
   <img src="https://qinglan-1324038201.cos.ap-nanjing.myqcloud.com/images/202405291124162.png" alt="single_char_frequency" style="zoom:67%;" />
   
-  ```
+  ```python
   # 单字分词后，绘制单字前 num 个频率最高的词组柱状图
   def draw_split_single(num=15):
       charCount = write_filtered_char()
