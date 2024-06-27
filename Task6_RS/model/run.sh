@@ -1,0 +1,1 @@
+sh scripts/run_infer_and_search.sh $1

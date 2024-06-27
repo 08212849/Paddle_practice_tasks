@@ -1,3 +1,10 @@
 .idea/
 *.docx
 *.pdf
+*.pdparams
+*.log
+*.zip
+*.csv
+*.txt
+*.jpg
+hnsw_index.bin
